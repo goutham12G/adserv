@@ -3,7 +3,7 @@ pipeline {
 
   environment {
     PROJECT = "augmented-ward-329505"
-    APP_NAME = "hello"
+    APP_NAME = "adservice"
     FE_SVC_NAME = "${APP_NAME}-frontend"
     CLUSTER = "goutham"
     CLUSTER_ZONE = "us-central1-c"

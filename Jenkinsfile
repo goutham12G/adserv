@@ -49,7 +49,7 @@ spec:
         container('gradle-bld') {
           sh """
              ls -a && pwd 
-             gradlew installDist
+             gradlew
           """
         }
       }

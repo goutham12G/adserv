@@ -26,7 +26,7 @@ spec:
  # serviceAccountName: cd-jenkins
   containers:
   - name: gradle-bld
-    image: gradle:6.9.2-jdk-alpine
+    image: openjdk:latest
     command:
     - cat
     tty: true

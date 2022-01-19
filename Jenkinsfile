@@ -25,8 +25,8 @@ spec:
   # Use service account that can deploy to all namespaces
  # serviceAccountName: cd-jenkins
   containers:
-  - name: maven-bld
-    image: maven:amazoncorretto
+  - name: gradle-bld
+    image: gradle:7.3.3-jdk17-alpine
     command:
     - cat
     tty: true
@@ -46,10 +46,10 @@ spec:
   stages {
     stage('codebuild') {
       steps {
-        container('maven-bld') {
+        container('gradle-bld') {
           sh """
              ls -a && pwd 
-             mvn clean install
+             gradlew
           """
         }
       }

@@ -6,5 +6,5 @@ spec:
   selector:
     app: goutham
   ports:
-  - port: 9555
-    targetPort: 80
+  - port: 80
+    targetPort: 9555

@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: goutham
-        image: gcr.io/augmented-ward-329505/adservice:null.16
+        image: gcr.io/augmented-ward-329505/adservice
         resources:
           limits:
             memory: "128Mi"

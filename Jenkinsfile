@@ -2,10 +2,10 @@
 pipeline {
 
   environment {
-    PROJECT = "augmented-ward-329505"
+    PROJECT = "useful-cathode-334010"
     APP_NAME = "adservice"
     FE_SVC_NAME = "${APP_NAME}-frontend"
-    CLUSTER = "goutham"
+    CLUSTER = "cluster1"
     CLUSTER_ZONE = "us-central1-c"
     IMAGE_TAG = "gcr.io/${PROJECT}/${APP_NAME}"
     JENKINS_CRED = "${PROJECT}"

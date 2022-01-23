@@ -2,10 +2,10 @@
 pipeline {
 
   environment {
-    PROJECT = "subbareddy-336408"
+    PROJECT = "useful-cathode-334010"
     APP_NAME = "adservice"
     FE_SVC_NAME = "${APP_NAME}-frontend"
-    CLUSTER = "goutham"
+    CLUSTER = "kubernet"
     CLUSTER_ZONE = "us-central1-c"
     IMAGE_TAG = "gcr.io/${PROJECT}/${APP_NAME}"
     JENKINS_CRED = "${PROJECT}"
@@ -63,7 +63,7 @@ spec:
     stage('Deploy Dev') {
       steps {
         container('kubectl') {
-          sh "gcloud container clusters get-credentials goutham --zone us-central1-c --project subbareddy-336408"
+          sh "gcloud container clusters get-credentials kubernet --zone us-central1-c --project useful-cathode-334010"
           sh "kubectl --help"
           
          

@@ -2,10 +2,10 @@
 pipeline {
 
   environment {
-    PROJECT = "psychic-cascade-339206"
+    PROJECT = "my-project-600-339318"
     APP_NAME = "adservice"
     FE_SVC_NAME = "${APP_NAME}-frontend"
-    CLUSTER = "sample-application"
+    CLUSTER = "iphone"
     CLUSTER_ZONE = "us-central1-c"
     IMAGE_TAG = "gcr.io/${PROJECT}/${APP_NAME}"
     JENKINS_CRED = "${PROJECT}"

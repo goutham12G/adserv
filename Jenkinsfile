@@ -5,7 +5,7 @@ pipeline {
     PROJECT = "my-project-600-339318"
     APP_NAME = "adservice"
     FE_SVC_NAME = "${APP_NAME}-frontend"
-    CLUSTER = "iphone"
+    CLUSTER = "peddarayudu"
     CLUSTER_ZONE = "us-central1-c"
     IMAGE_TAG = "gcr.io/${PROJECT}/${APP_NAME}"
     JENKINS_CRED = "${PROJECT}"
@@ -63,9 +63,8 @@ spec:
     stage('Deploy Dev') {
       steps {
         container('kubectl') {
-          sh "gcloud container clusters get-credentials iphone --zone us-central1-c --project my-project-600-339318"
-          sh "kubectl apply -f deployment.yaml"
-          sh "kubectl apply -f service.yaml"
+          sh "gcloud container clusters get-credentials peddarayudu --zone us-central1-c --project my-project-600-339318"
+
 
           
          

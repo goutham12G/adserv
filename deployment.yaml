@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: adservice
-        image: gcr.io/my-project-600-339318/adservice:latest
+        image: docker pull gcr.io/ascendant-timer-350911/adservice:latest
         resources:
           limits:
             memory: "128Mi"

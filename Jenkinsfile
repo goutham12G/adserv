@@ -2,10 +2,10 @@
 pipeline {
 
   environment {
-    PROJECT = "my-project-600-339318"
+    PROJECT = "ascendant-timer-350911"
     APP_NAME = "adservice"
     FE_SVC_NAME = "${APP_NAME}-frontend"
-    CLUSTER = "peddarayudu"
+    CLUSTER = "ci-cd"
     CLUSTER_ZONE = "us-central1-c"
     IMAGE_TAG = "gcr.io/${PROJECT}/${APP_NAME}"
     JENKINS_CRED = "${PROJECT}"
